@@ -177,6 +177,7 @@ public class perftest
 				{			
 					hello = new myObject();
 					hello.setHelloMsg("hello");
+					db.nameObj(hello, "hello_"+i);
 					if(i % numCommits == 0) {
 						session.commit();
 						session.begin();
